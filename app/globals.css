@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@fontsource/jetbrains-mono";
+@import "@fontsource/bebas-neue";
+
+
+@layer base {
+    :root {
+      --radius: 0.5rem;
+      --color-1: 0 100% 63%;
+      --color-2: 270 100% 63%;
+      --color-3: 210 100% 63%;
+      --color-4: 195 100% 63%;
+      --color-5: 90 100% 63%;
+    }
+    * {
+      @apply scrollbar-none;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+      border-radius: 0px;
+    }
+  
+    .hide-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  
+    .hide-scrollbar::-webkit-scrollbar-thumb {
+      background: transparent;
+      border-radius: 0px;
+    }
+  
+    .hide-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: transparent;
+    }
+  .dark {
+        --color-1: 0 100% 63%;
+        --color-2: 270 100% 63%;
+        --color-3: 210 100% 63%;
+        --color-4: 195 100% 63%;
+        --color-5: 90 100% 63%;
+    }
+  }
+.main{
+    background: rgb(32,80,0);
+background: linear-gradient(180deg, rgb(15, 37, 0) 9%, rgba(0,0,0,1) 100%);
+}
+.header {
+    background: rgba(255, 255, 255, 0.104);
+    box-shadow: 0 8px 32px 0 rgba(81, 81, 81, 0.37);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border: 1px solid rgba(255, 255, 255, 0.062);
+}
+.countdown {
+    background: #0000001d;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.964);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.sponsors-card {
+    background: #6d6d6d1d;
+    box-shadow: 0 8px 32px 0 rgba(155, 155, 155, 0.208);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
+
+  .scrollbar-none::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  .sponsors{
+    @apply md:w-[300px] w-[200px] h-[120px] md:h-[200px] rounded-3xl sponsors-card
+  }
+  .ps{
+    @apply xl:w-[350px] w-[300px] h-[400px] rounded-3xl p-10 justify-center flex flex-col  countdown
+  }
+  .countdown-box{
+@apply w-[80px] sm:w-[200px] h-[100px] sm:h-[200px] border-2 border-brand/50  flex-col text-white rounded-3xl bg-black  flex items-center justify-center 
+  }
+  .list-trigger{
+    @apply text-white text-xl md:text-2xl
+  }
+  .list-item{
+    @apply text-brand  text-sm md:text-xl
+  }
+}
+
