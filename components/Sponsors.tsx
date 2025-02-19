@@ -4,7 +4,7 @@ import { Marquee } from './magicui/marquee'
 
 const Sponsors = () => {
   return (
-    <div id='sponsors' className='mt-20 w-full px-10 sm:px-0 sm:h-screen flex flex-col items-center'>
+    <div id='sponsors' className='mt-20 w-full px-10 sm:px-0 sm:min-h-screen flex flex-col items-center'>
       <BoxReveal ><h1 className='font-bebas text-5xl sm:text-7xl text-white mb-5'>our sponsors</h1></BoxReveal>
       <BoxReveal ><h1 className='text-brand text-md  text-center sm:text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, laborum.</h1></BoxReveal>
       <div className='mt-20  gap-10 hidden md:flex flex-col items-center justify-center'>

@@ -10,7 +10,7 @@ import { TypingAnimation } from "./magicui/typing-animation";
 
 const Faqs = () => {
   return (
-    <div id="faqs" className="w-full px-10 sm:px-0 sm:h-screen flex flex-col gap-10 mt-20 items-center">
+    <div id="faqs" className="w-full px-10 sm:px-0 sm:min-h-screen flex flex-col gap-10 mt-20 items-center">
     <BoxReveal>
     <h1 className="font-bebas text-white text-5xl text-center sm:text-7xl">
         frequently asked questions
