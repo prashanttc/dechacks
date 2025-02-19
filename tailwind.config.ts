@@ -115,7 +115,10 @@ export default {
   			sm: '6px'
   		},
   		colors: {
-  			brand: '#32cd32',
+  			brand: '#1ecbe1',
+			purple:'#812C93',
+			yellow:'#FB7B00',
+			blue:'#18529B',
   			'color-1': 'hsl(var(--color-1))',
   			'color-2': 'hsl(var(--color-2))',
   			'color-3': 'hsl(var(--color-3))',

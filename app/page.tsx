@@ -17,7 +17,7 @@ const page = () => {
         <Header />
         <MobileNav/>
         <Hero />
-      <div className="flex relative w-full items-center flex-col sm:px-20 bg-gradient-to-b from-[#006600]/50  to-transparent to-30% ">
+      <div className="flex relative w-full items-center flex-col sm:px-20 bg-gradient-to-b  to-transparent to-30% ">
       <Separator className="bg-white/30"/>
       <DotPattern className="absolute z-0"/>
         <Countdown/> 

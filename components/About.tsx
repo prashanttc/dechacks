@@ -38,39 +38,39 @@ const About = () => {
             &gt; pnpm dlx shadcn@latest init
           </TypingAnimation>
 
-          <AnimatedSpan delay={1500} className="text-green-500">
+          <AnimatedSpan delay={1500} className="text-brand">
             <span>✔ Preflight checks.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={2000} className="text-green-500">
+          <AnimatedSpan delay={2000} className="text-brand">
             <span>✔ Verifying framework. Found Next.js.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={2500} className="text-green-500">
+          <AnimatedSpan delay={2500} className="text-brand">
             <span>✔ Validating Tailwind CSS.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={3000} className="text-green-500">
+          <AnimatedSpan delay={3000} className="text-brand">
             <span>✔ Validating import alias.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={3500} className="text-green-500">
+          <AnimatedSpan delay={3500} className="text-brand">
             <span>✔ Writing components.json.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={4000} className="text-green-500">
+          <AnimatedSpan delay={4000} className="text-brand">
             <span>✔ Checking registry.</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={4500} className="text-green-500">
+          <AnimatedSpan delay={4500} className="text-brand">
             <span>✔ Updating tailwind.config.ts</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={5000} className="text-green-500">
+          <AnimatedSpan delay={5000} className="text-brand">
             <span>✔ Updating app/globals.css</span>
           </AnimatedSpan>
 
-          <AnimatedSpan delay={5500} className="text-green-500">
+          <AnimatedSpan delay={5500} className="text-brand">
             <span>✔ Installing dependencies.</span>
           </AnimatedSpan>
 
@@ -79,7 +79,7 @@ const About = () => {
             <span className="pl-2">- lib/utils.ts</span>
           </AnimatedSpan>
 
-          <TypingAnimation delay={6500} className="text-white/60">
+          <TypingAnimation delay={6500} className="text-green-500 ">
             Success! Project initialization completed.
           </TypingAnimation>
 

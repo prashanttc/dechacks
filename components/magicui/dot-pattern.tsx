@@ -131,7 +131,7 @@ export function DotPattern({
           cy={dot.y}
           r={cr}
           fill={glow ? `url(#${id}-gradient)` : "currentColor"}
-          className="text-green-500/40"
+          className="text-blue/60"
           initial={glow ? { opacity: 0.4, scale: 1 } : {}}
           animate={
             glow

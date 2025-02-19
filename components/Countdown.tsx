@@ -29,15 +29,15 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div className="z-10">
+    <div className="z-10 relative">
       <div className="px-10 sm:px-0 mb-10 sm:mb-0  w-full text-white mt-10 sm:mt-0 sm:h-screen items-center justify-center flex flex-col gap-10">
         <HyperText className="font-bebas text-3xl md:text-7xl">
           COMING SOON
         </HyperText>
         <div className="flex gap-2 sm:gap-10 font-jetbrains text-3xl md:text-7xl">
-            <div className="countdown-box">{timeLeft.days}    <span className="text-green-500 text-sm">days</span></div>
-            <div className="countdown-box">{timeLeft.hours}   <span className="text-green-500 text-sm">hours</span> </div>
-            <div className="countdown-box">{timeLeft.minutes} <span className="text-green-500 text-sm">minutes</span> </div>
+            <div className="countdown-box">{timeLeft.days}    <span className="text-brand text-sm">days</span></div>
+            <div className="countdown-box">{timeLeft.hours}   <span className="text-brand text-sm">hours</span> </div>
+            <div className="countdown-box">{timeLeft.minutes} <span className="text-brand text-sm">minutes</span> </div>
   
                 </div>
         <h1 className="text-white text-sm text-center md:text-xl mt-4">
