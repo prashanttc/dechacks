@@ -21,22 +21,16 @@ export default {
   			]
   		},
   		animation: {
-  			'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
   			'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
   			grid: 'grid 15s linear infinite',
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-  			ripple: 'ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite',
   			orbit: 'orbit calc(var(--duration)*1s) linear infinite',
   			marquee: 'marquee var(--duration) infinite linear',
   			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
   		},
   		keyframes: {
-  			'shimmer-slide': {
-  				to: {
-  					transform: 'translate(calc(100cqw - 100%), 0)'
-  				}
-  			},
+  		
   			'spin-around': {
   				'0%': {
   					transform: 'translateZ(0) rotate(0)'
@@ -75,14 +69,6 @@ export default {
   					height: '0'
   				}
   			},
-  			ripple: {
-  				'0%, 100%': {
-  					transform: 'translate(-50%, -50%) scale(1)'
-  				},
-  				'50%': {
-  					transform: 'translate(-50%, -50%) scale(0.9)'
-  				}
-  			},
   			orbit: {
   				'0%': {
   					transform: 'rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg))'
@@ -117,8 +103,7 @@ export default {
   		colors: {
   			brand: '#1ecbe1',
 			purple:'#812C93',
-			yellow:'#FB7B00',
-			blue:'#18529B',
+			blue1:'#18529B',
   			'color-1': 'hsl(var(--color-1))',
   			'color-2': 'hsl(var(--color-2))',
   			'color-3': 'hsl(var(--color-3))',

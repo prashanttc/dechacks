@@ -13,12 +13,12 @@ import {
   FaChrome,
   FaFirefoxBrowser,
 } from "react-icons/fa";
-import { MagicCard } from "./magicui/magic-card";
+import { problemstatement } from "@/lib/utils"
 
 const About = () => {
   return (
-  <>
-    <div
+<div className="z-10">
+   <div
       id="about"
       className=" w-full mt-32 px-10 sm:px-0  flex flex-col items-center"
     >
@@ -33,86 +33,56 @@ const About = () => {
         </h1>
       </BoxReveal>
       <div className="mt-20 w-full flex justify-between ">
-        <Terminal className="h-full w-[50%] hidden xl:flex">
+      <Terminal className="h-full w-[50%] hidden xl:flex">
           <TypingAnimation className="text-white">
-            &gt; pnpm dlx shadcn@latest init
+            &gt; devhack info
           </TypingAnimation>
-
           <AnimatedSpan delay={1500} className="text-brand">
-            <span>✔ Preflight checks.</span>
+            <span>✔  Fetching event details...</span>
           </AnimatedSpan>
 
           <AnimatedSpan delay={2000} className="text-brand">
-            <span>✔ Verifying framework. Found Next.js.</span>
+            <span>✔ Event: DevHack 2025</span>
           </AnimatedSpan>
 
           <AnimatedSpan delay={2500} className="text-brand">
-            <span>✔ Validating Tailwind CSS.</span>
+            <span>✔ 📅 Date: March 28, 2025.</span>
           </AnimatedSpan>
 
           <AnimatedSpan delay={3000} className="text-brand">
-            <span>✔ Validating import alias.</span>
-          </AnimatedSpan>
-
-          <AnimatedSpan delay={3500} className="text-brand">
-            <span>✔ Writing components.json.</span>
+            <span>✔ 📍 Location: CDGI College, Indore
+            </span>
           </AnimatedSpan>
 
           <AnimatedSpan delay={4000} className="text-brand">
-            <span>✔ Checking registry.</span>
+            <span>✔🎯 Theme: &quot;Innovate. Build. Disrupt.&quot;
+            .</span>
           </AnimatedSpan>
 
           <AnimatedSpan delay={4500} className="text-brand">
-            <span>✔ Updating tailwind.config.ts</span>
+            <span>✔ 💡 &quot;Code, Collaborate, Conquer!&quot;  
+            </span>
           </AnimatedSpan>
-
-          <AnimatedSpan delay={5000} className="text-brand">
-            <span>✔ Updating app/globals.css</span>
-          </AnimatedSpan>
-
-          <AnimatedSpan delay={5500} className="text-brand">
-            <span>✔ Installing dependencies.</span>
-          </AnimatedSpan>
-
-          <AnimatedSpan delay={6000} className="text-blue-500">
-            <span>/ Updated 1 file:</span>
-            <span className="pl-2">- lib/utils.ts</span>
-          </AnimatedSpan>
-
           <TypingAnimation delay={6500} className="text-green-500 ">
-            Success! Project initialization completed.
+            Success! dev hack info fetched successfully .
           </TypingAnimation>
 
           <TypingAnimation delay={7000} className="text-white/60">
-            You may now add components.
+            now you can Register
           </TypingAnimation>
         </Terminal>
-        <div className="text-white/70 leading-[25px] md:tex-white w-full md:w-[50%] text-center text-sm md:text-xl">
+        <div className="text-white/90  leading-[30px]  w-full xl:w-[50%] font-jetbrains  text-center text-sm xl:text-xl">
           <h1>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            tenetur vero hic quos. Eaque hic assumenda labore dolorum, neque
-            fugiat illo nesciunt, necessitatibus quis, repudiandae recusandae!
-            Quo iure placeat doloremque aut autem quasi hic, sunt vitae, error
-            neque voluptatibus reprehenderit ducimus atque laboriosam
-            exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Iure tenetur vero hic quos. Eaque hic assumenda labore
-            dolorum, neque fugiat illo nesciunt, necessitatibus quis,
-            repudiandae recusandae! Quo iure placeat doloremque aut autem quasi
-            hic, sunt vitae, error neque voluptatibus reprehenderit ducimus
-            atque laboriosam exercitationem. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Iure tenetur vero hic quos. Eaque hic
-            assumenda labore dolorum, neque fugiat illo nesciunt, necessitatibus
-            quis, repudiandae recusandae! Quo iure placeat doloremque aut autem
-            quasi hic, sunt vitae, error neque voluptatibus reprehenderit
-            ducimus atque laboriosam exercitationem.
+          Welcome to the first-ever hackathon under <span className="text-brand font-semibold">Echelon Dev Society! </span>Dev Hacks isn’t just about coding—it’s about breaking barriers, thinking differently, and building something that actually matters. Whether you’re here to create, compete, or just vibe with fellow techies, this is your space to shine. In just 8 hours, you’ll brainstorm, prototype, and pitch your way to glory. No all-nighters, just pure adrenaline, problem-solving, and innovation at its peak. Ready to make your mark? Let’s hack. Let’s innovate. Let’s <span className="text-brand font-semibold"> Dev Hack.</span>
+
           </h1>
         </div>
       </div>
       <div className=" -mb-10  xl:mt-0 w-full  text-white flex flex-col items-center">
-        <div className=" md:mt-32 mb-10 xl:mb-32 w-full h-[500px] flex justify-between">
+        <div className=" md:mt-32 mb-10 md:mb-32 w-full h-[500px] flex justify-between">
           <div className=" flex items-center justify-center w-full  md:w-[50%]">
-            <div className="flex flex-col items-center justify-center text-center text-5xl md:text-7xl gap-20 md:gap-5 font-bebas text-white">
-              <h1>explore various domains</h1>
+            <div className="flex flex-col items-center justify-center text-center text-5xl xl:text-7xl gap-20 md:gap-5 font-bebas text-white">
+              <h1>dominate in your domains</h1>
               <WordRotate
                 className="text-brand"
                 words={[
@@ -135,7 +105,7 @@ const About = () => {
               <FaReact className="text-blue-500 w-full h-full" />
               <FaNodeJs className="text-green-500 w-full h-full " />
               <FaPython className="text-yellow-500 w-full h-full " />
-              <FaDatabase className="text-gray-500 w-full h-full " />
+              <FaDatabase className="text-pink-500 w-full h-full " />
             </OrbitingCircles>
             <OrbitingCircles
               className="absolute right-[46%] top-[45%] "
@@ -153,28 +123,19 @@ const About = () => {
       </div>
       <div className="w-full flex flex-col items-center mb-10 xl:mb-32">
       <h1 className="font-bebas text-white text-center text-5xl md:text-7xl mb-5">PROBLEM STATEMENTS</h1>
-      <TypingAnimation   className="text-md md:text-xl text-center font-jetbrains text-brand mb-20 xl:mb-0">we know you already got so many</TypingAnimation >
-      <div className="mt-0 md:mt-20  w-full flex xl:flex-row xl:gap-0 gap-10 flex-col justify-between">
-        <MagicCard className="ps">
-          <h1 className="text-brand font-bebas text-2xl">Mobile Development</h1>
-          <p className="text-white text-sm mt-4 text-center font-jetbrains">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem molestias similique, possimus tenetur dolores nesciunt dolorem earum rem sequi, corrupti itaque libero eum omnis! Explicabo dolorum laborum dolor eius, est reiciendis ipsum similique laudantium quia illo temporibus magnam sit expedita unde, odit dignissimos?</p>
-        </MagicCard>
-        <MagicCard className="ps">
-          <h1 className="text-brand font-bebas text-2xl">Mobile Development</h1>
-          <p className="text-white text-sm mt-4 text-center font-jetbrains">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem molestias similique, possimus tenetur dolores nesciunt dolorem earum rem sequi, corrupti itaque libero eum omnis! Explicabo dolorum laborum dolor eius, est reiciendis ipsum similique laudantium quia illo temporibus magnam sit expedita unde, odit dignissimos?</p>
-        </MagicCard>
-        <MagicCard className="ps">
-          <h1 className="text-brand font-bebas text-2xl">Mobile Development</h1>
-          <p className="text-white text-sm mt-4 text-center font-jetbrains">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem molestias similique, possimus tenetur dolores nesciunt dolorem earum rem sequi, corrupti itaque libero eum omnis! Explicabo dolorum laborum dolor eius, est reiciendis ipsum similique laudantium quia illo temporibus magnam sit expedita unde, odit dignissimos?</p>
-        </MagicCard>
-        <MagicCard className="ps">
-          <h1 className="text-brand font-bebas text-2xl">Mobile Development</h1>
-          <p className="text-white text-sm mt-4 text-center font-jetbrains">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem molestias similique, possimus tenetur dolores nesciunt dolorem earum rem sequi, corrupti itaque libero eum omnis! Explicabo dolorum laborum dolor eius, est reiciendis ipsum similique laudantium quia illo temporibus magnam sit expedita unde, odit dignissimos?</p>
-        </MagicCard>
-
+      <TypingAnimation   className="text-md md:text-xl text-center font-jetbrains text-brand ">we know you already got so many</TypingAnimation >
+      <h1 className="font-jetbrains mb-20 xl:mb-0 text-white  text-center mt-5 sm:text-md text-sm"><span className="text-red-500">NOTE -</span> this are sample problem statements. </h1>
+      <div className="mt-0 md:mt-20  w-full flex  xl:gap-0 gap-10  flex-wrap justify-center xl:justify-between items-center">
+         {problemstatement.map((ps)=>(
+              <div key={ps.id} className="ps">
+              <h1 className="text-brand font-bebas text-2xl text-center">{ps.domain}</h1>
+               <p className="text-white text-sm mt-4 text-center font-jetbrains">{ps.statement}</p>
+             </div>
+          ))}
+        </div>
       </div>
-      </div>
-    </div></>
+    </div>
+  </div>
   );
 };
 

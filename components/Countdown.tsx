@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { HyperText } from "./magicui/hyper-text";
 
 const Countdown = () => {
-  const targetDate = new Date("2025-03-04T23:59:59").getTime();
+  const targetDate = new Date("2025-03-27T23:59:59").getTime();
 
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
@@ -40,11 +40,15 @@ const Countdown = () => {
             <div className="countdown-box">{timeLeft.minutes} <span className="text-brand text-sm">minutes</span> </div>
   
                 </div>
-        <h1 className="text-white text-sm text-center md:text-xl mt-4">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, deserunt?
+      <div className="flex flex-col items-center justify-center gap-10">
+      <h1 className="text-white text-sm text-center md:text-xl mt-4 font-jetbrains">
+        assemble your team ,<span className="text-brand">DEVHACK</span>  is coming 
         </h1>
+        <h1 className="font-bebas text-4xl text-brand">28 march 2025</h1>
+      </div>
       </div>
     </div>
+
   );
 };
 

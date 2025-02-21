@@ -9,7 +9,7 @@ import { RetroGrid } from "./magicui/retro-grid";
 
 const Hero = () => {
   return (
-    <div id="#" className="w-full relative sm:min-h-screen mt-10 sm:mt-0  flex flex-col items-center justify-center p-10 sm:p-0">
+    <div id="#" className="w-full relative sm:min-h-screen  flex flex-col items-center justify-center p-10 sm:p-0">
       <RetroGrid className="absolute inset-0 z-0"/>
       <div className="font-bebas  text-white flex flex-col gap-5 text-center items-center z-10">
         <h1 className="hidden sm:flex text-[12rem]">DEV <span className="text-brand">HACKS</span></h1>
