@@ -20,9 +20,9 @@ const page = () => {
       <MobileNav />
       <Hero />
       <Separator className="bg-white/50"/>
-      <div className="flex relative  w-full items-center flex-col sm:px-20">
+      <div className="flex relative  h-fit w-full items-center flex-col sm:px-20">
         <LazyLoad>
-        <DotPattern  className=" w-full h-full z-0"/>
+        <DotPattern  className="absolute w-full h-[100%] z-0"/>
         <Countdown />
         </LazyLoad>
         <Separator className="bg-white/50"/>
