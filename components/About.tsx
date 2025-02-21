@@ -125,7 +125,7 @@ const About = () => {
       <h1 className="font-bebas text-white text-center text-5xl md:text-7xl mb-5">PROBLEM STATEMENTS</h1>
       <TypingAnimation   className="text-md md:text-xl text-center font-jetbrains text-brand ">we know you already got so many</TypingAnimation >
       <h1 className="font-jetbrains mb-20 xl:mb-0 text-white  text-center mt-5 sm:text-md text-sm"><span className="text-red-500">NOTE -</span> this are sample problem statements. </h1>
-      <div className="mt-0 md:mt-20  w-full flex  xl:gap-0 gap-10  flex-wrap justify-center xl:justify-between items-center">
+      <div className="mt-0 md:mt-20  w-full flex flex-col xl:flex-row gap-10  justify-center xl:justify-between items-center">
          {problemstatement.map((ps)=>(
               <div key={ps.id} className="ps">
               <h1 className="text-brand font-bebas text-2xl text-center">{ps.domain}</h1>

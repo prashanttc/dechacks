@@ -10,6 +10,8 @@ import Hero from "@/components/Hero";
 import Prize from "@/components/Prize";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import LazyLoad from "@/components/LazyLoad";
+import { Separator } from "@/components/ui/separator";
+import Bot from "@/components/Bot";
 
 const page = () => {
   return (
@@ -17,25 +19,34 @@ const page = () => {
       <Header />
       <MobileNav />
       <Hero />
+      <Separator className="bg-white/50"/>
       <div className="flex relative  w-full items-center flex-col sm:px-20">
         <LazyLoad>
         <DotPattern  className=" w-full h-full z-0"/>
         <Countdown />
         </LazyLoad>
+        <Separator className="bg-white/50"/>
         <LazyLoad>
           <About />
         </LazyLoad>
+        <Separator className="bg-white/50"/>
         <LazyLoad>
           <Prize />
         </LazyLoad>
+        <Separator className="bg-white/50"/>
         <LazyLoad>
           <Sponsors />
         </LazyLoad>
+        <Separator className="bg-white/50"/>
+        <LazyLoad>
+          <Footer />
+        </LazyLoad>
+        <Separator className="bg-white/50"/>
         <LazyLoad>
           <Faqs />
         </LazyLoad>
       </div>
-      <Footer />
+    <Bot/>
     </div>
   );
 };

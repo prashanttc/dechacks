@@ -131,22 +131,22 @@ background: linear-gradient(180deg, rgb(15, 37, 0) 9%, rgba(0,0,0,1) 100%);
     @apply md:w-[300px] w-[200px] h-[120px] md:h-[200px] rounded-3xl sponsors-card
   }
   .ps{
-    @apply xl:w-[350px] w-[300px] h-[400px] rounded-3xl p-10  flex flex-col  countdown
+    @apply xl:w-[30%] w-[300px]  border-2 border-brand bg-black min-h-[400px] rounded-3xl p-10  flex flex-col 
   }
   .countdown-box{
 @apply w-[80px] sm:w-[200px] h-[100px] sm:h-[200px] border-2 border-brand/50  flex-col text-white rounded-3xl bg-black  flex items-center justify-center 
   }
   .list-trigger{
-    @apply text-white text-xl md:text-2xl
+    @apply text-white text-sm md:text-xl
   }
   .list-item{
-    @apply text-brand  text-sm md:text-xl
+    @apply text-brand  text-xs md:text-sm
   }
   .prize-box{
-    @apply rounded-3xl prize w-[200px] xl:w-[300px] flex flex-col p-5 xl:p-10 items-center gap-2 xl:gap-5 
+    @apply rounded-3xl prize w-[200px] xl:w-[40%] flex flex-col p-5 xl:p-10 items-center gap-2 xl:gap-5 
   }
   .prize-image{
-    @apply xl:w-32 xl:h-32 w-[40px] h-[40px] rounded-full bg-white
+    @apply xl:w-32 xl:h-32 w-[40px] h-[40px] flex items-center justify-center p-5 xl:p-10 rounded-full bg-brand/80
   }
 }
 
