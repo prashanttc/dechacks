@@ -11,5 +11,5 @@ export default function LazyLoad({ children }: { children: React.ReactNode }) {
       setIsLoaded(true);
     }
 
-  return <div className="w-full z-0" ref={ref}>{isLoaded?children:<LoaderP/>}</div>;
+  return <div className="w-full h-full  z-0" ref={ref}>{isLoaded?children:<LoaderP/>}</div>;
 }
