@@ -38,15 +38,18 @@ const page = () => {
           <Sponsors />
         </LazyLoad>
         <Separator className="bg-white/50"/>
-        <LazyLoad>
+     
+     </div>
+     <div className="w-full  bg-gradient-to-t from-[#18529B]/70  to-transparent to-100% ">
+     <LazyLoad>
           <Footer />
         </LazyLoad>
         <Separator className="bg-white/50"/>
         <LazyLoad>
           <Faqs />
         </LazyLoad>
-      </div>
     <Bot/>
+      </div>
     </div>
   );
 };
