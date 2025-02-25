@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+      </head>
       <body
         className={`${bebasNeue.className} ${jetBrainsMono.className} antialiased`}
       >              
