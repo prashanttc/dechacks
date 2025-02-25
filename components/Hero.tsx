@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../lib/motion";
 import { HyperText } from "./magicui/hyper-text";
 import { RetroGrid } from "./magicui/retro-grid";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -44,8 +45,9 @@ const Hero = () => {
         by echelon dev society
         </HyperText>
         <Button className="mt-5 font-jetbrains w-fit p-10 py-[30px] hover:bg-brand  text-2xl bg-black border-[1px] border-brand">
-          Register now
-        </Button>
+<Link href='https://unstop.com/p/dev-hacks-chameli-devi-group-of-institutions-1399736'>
+Register now
+</Link>        </Button>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { HyperText } from "./magicui/hyper-text";
 
 const Header = () => {
   return (
-    <div className="h-[60px] fixed w-[90%] hidden sm:flex justify-between mt-5 items-center z-50 text-white">
+    <div className="h-[60px] fixed w-[90%] hidden sm:flex justify-between mt-5 items-center z-[99] text-white">
       <h1 className="text-white font-bebas font-bold text-5xl">DEVHACKS</h1>
       <div className="w-[600px] hover:cursor-pointer   h-[50px] rounded-3xl hidden md:flex header items-center justify-between px-10 text-white font-jetbrains">
         <Link href='#'>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Bebas_Neue, JetBrains_Mono } from "next/font/google";
+import Preloader from "@/components/Preloader";
 
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], preload: true });
 const jetBrainsMono = JetBrains_Mono({ weight: ["400", "700"], subsets: ["latin"], preload: true });
@@ -20,7 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${bebasNeue.className} ${jetBrainsMono.className} antialiased`}
-      >
+      >              
+      <Preloader />
         {children}
       </body>
     </html>

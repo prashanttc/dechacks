@@ -21,33 +21,24 @@ const page = () => {
       <Hero />
       <Separator className="bg-white/50"/>
       <div className="flex relative  h-fit w-full items-center flex-col sm:px-20">
-        <LazyLoad>
         <DotPattern  className="absolute right-0 inset-y-0 w-full    h-full z-0"/>
         <Countdown />
-        </LazyLoad>
         <Separator className="bg-white/50"/>
         <LazyLoad>
           <About />
         </LazyLoad>
         <Separator className="bg-white/50"/>
-        <LazyLoad>
           <Prize />
-        </LazyLoad>
         <Separator className="bg-white/50"/>
         <LazyLoad>
           <Sponsors />
         </LazyLoad>
         <Separator className="bg-white/50"/>
-     
-     </div>
+          </div>
      <div className="w-full  bg-gradient-to-t from-[#18529B]/70  to-transparent to-100% ">
-     <LazyLoad>
           <Footer />
-        </LazyLoad>
         <Separator className="bg-white/50"/>
-        <LazyLoad>
           <Faqs />
-        </LazyLoad>
     <Bot/>
       </div>
     </div>
