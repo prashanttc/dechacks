@@ -128,7 +128,7 @@ const About = () => {
         </div>
         <div className="w-full flex flex-col items-center mb-10 xl:mb-32">
           <h1 className="font-bebas text-white text-center text-5xl md:text-7xl mb-5">
-            PROBLEM STATEMENTS
+           sample PROBLEM STATEMENTS
           </h1>
           <TypingAnimation className="text-md md:text-xl text-center font-jetbrains text-brand ">
             we know you already got so many
