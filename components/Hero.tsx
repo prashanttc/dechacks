@@ -10,10 +10,15 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div id="#" className="w-full relative sm:min-h-screen  flex flex-col items-center justify-center p-10 sm:pt-0">
-      <RetroGrid className="absolute inset-0 z-0"/>
+    <div
+      id="#"
+      className="w-full relative sm:min-h-screen  flex flex-col items-center justify-center p-10 sm:pt-0"
+    >
+      <RetroGrid className="absolute inset-0 z-0" />
       <div className="font-bebas h-screen justify-center text-white flex flex-col gap-5 text-center items-center z-10">
-        <h1 className="hidden sm:flex text-[12rem]">DEV <span className="text-brand">HACKS</span></h1>
+        <h1 className="hidden sm:flex text-[12rem]">
+          DEV <span className="text-brand">HACKS</span>
+        </h1>
         <motion.div
           variants={staggerContainer(0.1, 0.1)}
           initial="hidden"
@@ -42,12 +47,13 @@ const Hero = () => {
           A 8 hours long hackathon at citronics cdgi
         </h1>
         <HyperText className=" text-sm font-jetbrains text-white">
-        by echelon dev society
+          by echelon dev society
         </HyperText>
         <Button className="mt-5 font-jetbrains w-fit p-10 py-[30px] hover:bg-brand  text-2xl bg-black border-[1px] border-brand">
-<Link href='https://unstop.com/p/dev-hacks-chameli-devi-group-of-institutions-1399736'>
-Register now
-</Link>        </Button>
+          <Link href="https://unstop.com/p/dev-hacks-chameli-devi-group-of-institutions-1399736">
+            Register now
+          </Link>{" "}
+        </Button>
       </div>
     </div>
   );
