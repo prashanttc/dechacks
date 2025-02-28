@@ -10,9 +10,9 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div id="#" className="w-full relative sm:min-h-screen  flex flex-col items-center justify-center p-10 sm:p-0">
+    <div id="#" className="w-full relative sm:min-h-screen  flex flex-col items-center justify-center p-10 sm:pt-0">
       <RetroGrid className="absolute inset-0 z-0"/>
-      <div className="font-bebas  text-white flex flex-col gap-5 text-center items-center z-10">
+      <div className="font-bebas h-screen justify-center text-white flex flex-col gap-5 text-center items-center z-10">
         <h1 className="hidden sm:flex text-[12rem]">DEV <span className="text-brand">HACKS</span></h1>
         <motion.div
           variants={staggerContainer(0.1, 0.1)}

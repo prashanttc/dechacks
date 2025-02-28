@@ -4,149 +4,166 @@
 @import "@fontsource/jetbrains-mono";
 @import "@fontsource/bebas-neue";
 
+html {
+  scroll-behavior: smooth;
+}
 
 @layer base {
-    :root {
-      --radius: 0.5rem;
-      --color-1: 0 100% 63%;
-      --color-2: 270 100% 63%;
-      --color-3: 210 100% 63%;
-      --color-4: 195 100% 63%;
-      --color-5: 90 100% 63%;
-    }
-    * {
-      @apply scrollbar-none;
-    }
-    .hide-scrollbar::-webkit-scrollbar {
-      width: 0px;
-      height: 0px;
-      border-radius: 0px;
-    }
-  
-    .hide-scrollbar::-webkit-scrollbar-track {
-      background: transparent;
-    }
-  
-    .hide-scrollbar::-webkit-scrollbar-thumb {
-      background: transparent;
-      border-radius: 0px;
-    }
-  
-    .hide-scrollbar::-webkit-scrollbar-thumb:hover {
-      background: transparent;
-    }
+  :root {
+    --radius: 0.5rem;
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
+  }
+
+  * {
+    @apply scrollbar-none;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    border-radius: 0px;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+  }
+
+  .hide-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+
   .dark {
-        --color-1: 0 100% 63%;
-        --color-2: 270 100% 63%;
-        --color-3: 210 100% 63%;
-        --color-4: 195 100% 63%;
-        --color-5: 90 100% 63%;
-    }
+    --color-1: 0 100% 63%;
+    --color-2: 270 100% 63%;
+    --color-3: 210 100% 63%;
+    --color-4: 195 100% 63%;
+    --color-5: 90 100% 63%;
   }
+}
 
-  .gradient-02 {
-    position: absolute;
-    width: 200px;
-    height: 438px;
-    top: 0px;
-    right: -300px;
-    background: #7aebfb;
-    filter: blur(190px);
-  }
-  
-  .gradient-03 {
-    position: absolute;
-    width: 404px;
-    height: 800px;
-    left: 0%;
-    top: 5%;
-    background: rgba(149, 66, 232, 0.35);
-    filter: blur(175px);
-    transform: rotate(-114.2deg);
-  }
-  
-  .gradient-04 {
-    position: absolute;
-    width: 304px;
-    height: 100vh;
-    left: 30%;
-    top: 10%;
-    background: rgba(45, 72, 152, 0.75);
-    filter: blur(200px);
-    transform: rotate(-53.13deg);
-  }
-  
-  .gradient-05 {
-    background: linear-gradient(
-      180deg,
+.gradient-02 {
+  position: absolute;
+  width: 200px;
+  height: 438px;
+  top: 0px;
+  right: -300px;
+  background: #7aebfb;
+  filter: blur(190px);
+}
+
+.gradient-03 {
+  position: absolute;
+  width: 404px;
+  height: 800px;
+  left: 0%;
+  top: 5%;
+  background: rgba(149, 66, 232, 0.35);
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+}
+
+.gradient-04 {
+  position: absolute;
+  width: 304px;
+  height: 100vh;
+  left: 30%;
+  top: 10%;
+  background: rgba(45, 72, 152, 0.75);
+  filter: blur(200px);
+  transform: rotate(-53.13deg);
+}
+
+.gradient-05 {
+  background: linear-gradient(180deg,
       rgba(255, 255, 255, 0.04) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
-  
+      rgba(255, 255, 255, 0) 100%);
+}
 
-.main{
-    background: rgb(32,80,0);
-background: linear-gradient(180deg, rgb(15, 37, 0) 9%, rgba(0,0,0,1) 100%);
+
+.main {
+  background: rgb(32, 80, 0);
+  background: linear-gradient(180deg, rgb(15, 37, 0) 9%, rgba(0, 0, 0, 1) 100%);
 }
+
 .header {
-    background: rgba(255, 255, 255, 0.104);
-    box-shadow: 0 8px 32px 0 rgba(81, 81, 81, 0.37);
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
-    border: 1px solid rgba(255, 255, 255, 0.062);
+  background: rgba(255, 255, 255, 0.104);
+  box-shadow: 0 8px 32px 0 rgba(81, 81, 81, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.062);
 }
+
 .countdown {
-    background: #0000001d;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.964);
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: #0000001d;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.964);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 .prize {
-    background: #0000001d;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.964);
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: #0000001d;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.964);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
+
 .sponsors-card {
-    background: #6d6d6d1d;
-    box-shadow: 0 8px 32px 0 rgba(155, 155, 155, 0.208);
-    backdrop-filter: blur( 7px );
-    -webkit-backdrop-filter: blur( 7px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: #6d6d6d1d;
+  box-shadow: 0 8px 32px 0 rgba(155, 155, 155, 0.208);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 @layer utilities {
   .scrollbar-none {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
   }
 
   .scrollbar-none::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+    display: none;
+    /* Chrome, Safari */
   }
-  .sponsors{
+
+  .sponsors {
     @apply md:w-[300px] w-[200px] h-[120px] md:h-[200px] rounded-3xl sponsors-card
   }
-  .ps{
-    @apply xl:w-[30%] w-[300px]  border-2 border-brand bg-black min-h-[400px] rounded-3xl p-10  flex flex-col 
+
+  .ps {
+    @apply xl:w-[30%] w-[300px] border-2 border-brand bg-black min-h-[400px] rounded-3xl p-10 flex flex-col
   }
-  .countdown-box{
-@apply w-[80px] sm:w-[200px] h-[100px] sm:h-[200px] border-2 border-brand/50  flex-col text-white rounded-3xl bg-black  flex items-center justify-center 
+
+  .countdown-box {
+    @apply w-[80px] sm:w-[200px] h-[100px] sm:h-[200px] border-2 border-brand/50 flex-col text-white rounded-3xl bg-black flex items-center justify-center
   }
-  .list-trigger{
+
+  .list-trigger {
     @apply text-white text-sm md:text-xl
   }
-  .list-item{
-    @apply text-brand  text-xs md:text-sm
+
+  .list-item {
+    @apply text-brand text-xs md:text-sm
   }
-  .prize-box{
-    @apply rounded-3xl prize w-[200px] xl:w-[40%] flex flex-col p-5 xl:p-10 items-center gap-2 xl:gap-5 
+
+  .prize-box {
+    @apply rounded-3xl prize w-[200px] xl:w-[40%] flex flex-col p-5 xl:p-10 items-center gap-2 xl:gap-5
   }
-  .prize-image{
+
+  .prize-image {
     @apply xl:w-32 xl:h-32 w-[40px] h-[40px] flex items-center justify-center p-5 xl:p-10 rounded-full bg-brand/80
   }
 }
-
