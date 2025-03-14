@@ -16,11 +16,11 @@ const Sponsors = () => {
         <Image height={1000} width={1000} alt='logo' src='/sponsors.png' className=' w-full h-full object-contain '/>
        </div>
        <div className='sponsors'>
-        <Image height={1000} width={1000} alt='logo' src='/sponsors.png' className=' w-full h-full object-contain '/>
+        <Image height={1000} width={1000} alt='logo' src='/sponsor-2.png' className=' w-full h-full object-cover '/>
        </div>
-       <div className='sponsors'>
+       {/* <div className='sponsors'>
         <Image height={1000} width={1000} alt='logo' src='/sponsors.png' className=' w-full h-full object-contain '/>
-       </div>
+       </div> */}
        </div>
       </div>
       <div className='mt-10 w-full  mb-10 gap-10 flex md:hidden items-center justify-center'>
